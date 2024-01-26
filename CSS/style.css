@@ -6,11 +6,23 @@
 
 .navigation-items {
     list-style-type: none;
+    padding: 20px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
 }
 
 .navigation-items li {
     display: inline;
-    justify-content: space-around;
+    padding: 10px;
+    justify-content: space-evenly;
+}
+
+.navigation-items li:first-child {
+    border-right: 1px solid black;
+}
+
+.navigation-items li:last-child {
+    border-left: 1px solid black;
 }
 
 header {
@@ -38,4 +50,13 @@ header {
 .col-25 {
     display: flex;
     flex: 25%;
+}
+
+.col-100 {
+    display: flex;
+    width: 100%;
+}
+
+nav img {
+    width: 10%;
 }
