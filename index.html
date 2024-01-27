@@ -6,60 +6,74 @@
     <title>E-Grocery</title>
     <link rel="stylesheet" href="CSS/style.css">
 </head>
-<body>
+<body id="Home">
 
     <nav class="navigation-grocery">
 
         <img src="assets/logo.jpg" alt="Logo">
 
         <ul class="navigation-items">
-            <li>Home</li>
-            <li>Our Package</li>
-            <li>Call Us</li>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#Package">Our Package</a></li>
+            <li><a href="#Call">Call Us</a></li>
         </ul>
 
-    </nav><hr>
+    </nav>
+
+    <div class="divider"></div>
 
     <header>
 
-        <h1>Top Rated E-Groceries Shop In Indonesian</h1>
+        <h1 style="margin-top: 100px;">Top Rated E-Groceries Shop In Indonesian</h1>
         <h3>Every Day with best ingredients</h3>
         <!-- tambah gambar kalo mau -->
 
-    </header>
+    </header><br><br>
 
     <div class="col-100">
 
         <div class="col-75">
-            <div>
-                <img src="assets/buah-sayur.webp" alt="banner">
-                <p>"setiap hari beli sayur buah yang fresh disini "</p>
+            <div class="container-banner">
+                <div>
+                    <img src="assets/buah-sayur.webp" alt="banner" class="banner">
+                    <p class="comment">"setiap hari beli sayur buah yang fresh disini"</p>
+                </div><br>
+                
+                <div class="mini-profile">
+                    <img src="assets/person.jpg" alt="profile">
+                    <div>
+                        <p class="mini-profile-name">Florence Hughes</p>
+                        <p class="comment">Ibu Rumah Tangga, 28</p>
+                    </div>
+                </div>
             </div>
 
-            <div>
-                <img src="" alt="profile">
-                <p>Florence Hughes</p>
-                <p>Ibu Rumah Tangga, 28</p>
-            </div>
+            
 
-            <div>garis kecil</div>
+            <br><br><div class="dash"></div>
 
-            <div>
+            <div class="headline">
                 <h4>Use this space to provide users with more information about your offer. Consider it a follow-up to your headline and explain the benefits of your service or product</h4>
 
-                <div>
-                    <img src="" alt="1">
-                    <p>Your first feature, written in the form of a benefit statement.</p>
+                <div class="flex">
+                    <div class="circle">1</div>
+                    <div>
+                        <p>Your first feature, written in the form of a benefit statement.</p>
+                    </div>
                 </div>
 
-                <div>
-                    <img src="" alt="2">
-                    <p>Your second feature, written in the form of a benefit statement.</p>
+                <div class="flex">
+                    <div class="circle">2</div>
+                    <div>
+                        <p>Your first feature, written in the form of a benefit statement.</p>
+                    </div>
                 </div>
 
-                <div>
-                    <img src="" alt="3">
-                    <p>Your third feature, written in the form of a benefit statement.</p>
+                <div class="flex">
+                    <div class="circle">3</div>
+                    <div>
+                        <p>Your first feature, written in the form of a benefit statement.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -67,93 +81,114 @@
         <div class="col-25">
             <form action="#">
                 <div>
-                    <h4>Contact Us</h4>
+                    <h4 class="heading-form">Contact Us</h4>
                     <p>Sales akan menghubungi anda 1x24 Jam setelah data kami terima.</p>
                 </div>
 
                 <div>
-                    <label for="name">Nama :</label>
+                    <label for="name">Nama :</label><br>
                     <input type="text" id="name" name="name" value="First and last name">
                 </div>
 
                 <div>
-                    <label for="email">Alamat E-mail :</label>
+                    <label for="email">Alamat E-mail :</label><br>
                     <input type="email" id="email" name="email" value="example@email.com">
                 </div>
 
                 <div>
-                    <label for="interest">Apa yang anda tertarik?</label>
+                    <label for="interest">Apa yang anda tertarik?</label><br>
                     <select name="interest" id="interest">
                         <option value="Select option">Select option</option>
                     </select>
                 </div>
+                <input type="submit">
             </form>
         </div>
-
     </div>
 
-    <hr><div class="our-product">
-
-        <h2>Our Package</h2><hr>
+        <h2 id="Package" class="whole-divider">Our Package</h2>
         <div>
-            <div>
-                <div class="circle"></div>
-                <p>Fresh Vegetables</p>
-                <p>Sayuran langsung dari sumber pertanian terbaik</p>
+            <div class="col-100" style="flex-wrap: wrap;">
+                <div class="col-33 package">
+                    <div class="circle"></div>
+                    <div class="package-item">
+                            <p>Fresh Vegetables</p>
+                            <p>Sayuran langsung dari sumber pertanian terbaik</p>
+                    </div>
+                </div>
+    
+                <div class="col-33 package">
+                    <div class="circle"></div>
+                    <div class="package-item">
+                            <p>Fresh Fruit</p>
+                            <p>Buah dengan kualitas terbaik dari local atau import dan harga yang menarik</p>
+                    </div>
+                </div>
+    
+                <div class="col-33 package">
+                    <div class="circle"></div>
+                    <div class="package-item">
+                            <p>Instant Delivery</p>
+                            <p>Di kirim instan oleh kurir yang telah di training dengan SOP untuk menjaga kondisi belanja kamu</p>
+                    </div>
+                </div>
             </div>
 
-            <div>
-                <div class="circle"></div>
-                <p>Fresh Vegetables</p>
-                <p>Sayuran langsung dari sumber pertanian terbaik</p>
-            </div>
+            <div class="dash-package"></div>
 
-            <div>
-                <div class="circle"></div>
-                <p>Fresh Vegetables</p>
-                <p>Sayuran langsung dari sumber pertanian terbaik</p>
-            </div>
-
-            <div>divider</div>
-
-            <div>
-                <div class="circle"></div>
-                <p>Fresh Vegetables</p>
-                <p>Sayuran langsung dari sumber pertanian terbaik</p>
-            </div>
-            
-            <div>
-                <div class="circle"></div>
-                <p>Fresh Vegetables</p>
-                <p>Sayuran langsung dari sumber pertanian terbaik</p>
-            </div>
-
-            <div>
-                <div class="circle"></div>
-                <p>Fresh Vegetables</p>
-                <p>Sayuran langsung dari sumber pertanian terbaik</p>
-            </div>
-            
+            <div class="col-100" style="flex-wrap: wrap;">
+                <div class="col-33 package">
+                    <div class="circle"></div>
+                    <div class="package-item">
+                            <p>Kitchen Ingredients</p>
+                            <p>Bumbu dapur lengkap untuk keperluan memasak kamu</p>
+                    </div>
+                </div>
+    
+                <div class="col-33 package">
+                    <div class="circle"></div>
+                    <div class="package-item">
+                            <p>Kitchen Set</p>
+                            <p>Segala jenis alat masa untuk membantu kamu memasak</p>
+                    </div>
+                </div>
+    
+                <div class="col-33 package">
+                    <div class="circle"></div>
+                    <div class="package-item">
+                        <p>Bunding Set</p>
+                        <p>Bingung masak apa? sudah tersedia paket untuk kamu masak di dapur mu</p>
+                    </div>
+                </div>
+            </div>            
         </div><hr>
     </div>
 
-    <div>
+    <div id="Call" class="closing-argument">
         <h2>Your Closing Argument Headline</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit tempore sequi eligendi autem quidem assumenda repellat delectus excepturi iusto, corporis sapiente. Atque quae accusantium libero pariatur placeat temporibus est nostrum.</p>
         <button>Call To Action</button>
     </div><hr>
 
     <footer>
-        <img src="assets/logo2.png" alt="Logo">
-        <ul>
-            <li>Terms of Service</li>
-            <li>Privacy Policy</li>
-        </ul>
-        <ul>
-            <li>copyright 2024</li>
-            <li>Yuri Prayitno</li>
-        </ul>
+        <div>
+            <img src="assets/logo2.png" alt="Logo">
+        </div>
+        <div>
+            <div>
+                <ul>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>copyright 2024</li>
+                    <li>Yuri Prayitno</li>
+                </ul>
+            </div> 
+        </div>
+               
     </footer>
-
 </body>
 </html>
