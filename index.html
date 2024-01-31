@@ -151,7 +151,7 @@
         </div>
 
         <div class="col-25">
-            <form action="#">
+            <form name="myForm" onsubmit="return validateForm()">
                 <div>
                     <h4 class="heading-form">Contact Us</h4>
                     <p>Sales akan menghubungi anda 1x24 Jam setelah data kami terima.</p>
@@ -159,19 +159,24 @@
 
                 <div>
                     <label for="name">Nama :</label><br>
-                    <input type="text" id="name" name="name" value="First and last name">
+                    <input type="text" name="fname" placeholder="First and last name">
+                    <p id="error-fname"></p>
                 </div>
 
                 <div>
                     <label for="email">Alamat E-mail :</label><br>
-                    <input type="email" id="email" name="email" value="example@email.com">
+                    <input type="email" id="email" name="email" placeholder="example@email.com">
+                    <p id="error-email"></p>
                 </div>
 
                 <div>
                     <label for="interest">Apa yang anda tertarik?</label><br>
                     <select name="interest" id="interest">
-                        <option value="Select option">Select option</option>
+                        <option value="kosong" style="display: none;">Choose option</option>
+                        <option value="Kuda">Kuda</option>
+                        
                     </select>
+                    <p id="error-interest"></p>
                 </div>
                 <input type="submit">
             </form>

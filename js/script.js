@@ -17,5 +17,39 @@ function slideShow(n) {
         imgList[i].style.display = 'none'
     }
 
-    imgList[slideIndex - 1].style.display = 'block'
+    imgList[slideIndex - 1].style.display = 'block' 
+}
+
+setInterval(() => {
+    plusSlides(1)
+}, 3000)
+
+function validateForm() {
+    const nama = document.forms['myForm']['fname'].value
+    let email = document.forms['myForm']['email'].value
+    let interest = document.forms['myForm']['interest'].value
+
+    if (nama == '') {
+        document.getElementById('error-fname').innerHTML = "Nama tidak boleh kosong!"
+
+        return false
+    }
+
+    document.getElementById('error-fname').innerHTML = ''
+
+    if (email == '') {
+        document.getElementById('error-email').innerHTML = "Email tidak boleh kosong!"
+
+        return false
+    }
+
+    document.getElementById('error-email').innerHTML = ""
+
+    if (interest == 'kosong') {
+        document.getElementById('error-interest').innerHTML = "Pilih salah satu!"
+
+        return false
+    }
+
+    document.getElementById('error-interest').innerHTML = ""
 }
