@@ -52,4 +52,6 @@ function validateForm() {
     }
 
     document.getElementById('error-interest').innerHTML = ""
+
+    console.log(nama, email, interest)
 }
