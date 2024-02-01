@@ -381,7 +381,7 @@ footer a {
     animation-duration: 1.5s;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) { 
     .navigation-grocery {
         flex-direction: column;
         position: unset;
